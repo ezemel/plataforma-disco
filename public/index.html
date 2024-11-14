@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Plataforma Disco - Coldplay</title>
+
+<script src="https://cdn.tailwindcss.com"></script> 
+<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/css/tether.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body style="background-image: url('premium_photo.jpeg'); height: 400px">
+<!-- partial:index.partial.html -->
+<div id="wrapper">
+   <div class="overlay"></div>
+    
+        <!-- Sidebar -->
+        
+    <nav class="navbar navbar-inverse fixed-top" id="sidebar-wrapper" role="navigation">
+      <ul class="nav sidebar-nav">
+          <div class="sidebar-header">
+          <div class="sidebar-brand">
+            <a href="#">Usuario</a></div></div>
+          <li><a href="addAlbum.html">Add Album</a></li>
+          <li><a href="tourDates.html">Tour Dates</a></li>
+          <li><a href="login2.html">Logout</a></li>
+      </ul>
+    </nav>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+    			<span class="hamb-middle"></span>
+				<span class="hamb-bottom"></span>
+            </button>
+            <div class="container mx-auto flex flex-col justify-center items-center text-center">
+              <div class="titulo block max-w-4xl flex-wrap">
+                <h1 class="title text-blue-900 text-7xl text-center border-4 rounded-xl mx-60 my-10 p-4 border-indigo-700">Coldplay</h1>
+              </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 ">
+                        <h1>Coldplay</h1>
+                        <p>Coldplay es una banda británica de rock formada en Londres en 1997. Está integrada por Chris Martin (vocalista principal y pianista), Jonny Buckland (guitarrista), Guy Berryman (bajista), Will Champion (baterista y vocalista secundario) y Phil Harvey (director creativo).a​3​ Se conocieron en el University College London y comenzaron a tocar música juntos desde 1997 hasta 1998, inicialmente llamándose a sí mismos Big Fat Noises y luego Starfish.</p>   
+
+                        <br>
+                        <br> 
+                        
+                        <!-- <div class="grid gap-x-8 gap-y-4 grid-cols-3 place-items-center object-scale-down h-48 w-96"> -->
+                        <div class="grid gap-x-8 gap-y-4 grid-cols-3 place-items-center object-scale-down">  
+                          <div>01 <img src="art_parachutes.jpg" alt=""  class=""></div>
+                          <div>02<img src="art_parachutes.jpg" alt=""></div>
+                          <div><a href="nuevoAlbum.html"><img src="album-cover-coldplay-band-legend-berkah-store.jpg" alt="">03 - Editar album</a></div>
+                          <div>04<img src="art_parachutes.jpg" alt=""></div>
+                          <div>05<img src="art_parachutes.jpg" alt=""></div>
+                          <div>06<img src="art_parachutes.jpg" alt=""></div>
+                        </div>
+                        
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js'></script><script  src="./script.js"></script>
+<!--  -->
+
+<input type="text">
+<button class="bg-blue-400 enviar">Enviar</button>
+<br>
+<br>
+<input class="idClase" type="text" placeholder="getalbums">
+<button class="bg-blue-400 enviar obtenerAlbum">Obtener Album</button>
+<p class="urlImagen"></p>
+<p class="TítuloAlbum"><h1>TítuloAlbum</h1></p>
+<p></p>
+<p></p>
+
+<div class="view-album"></div>
+<!-- AGREGO AXIOS POR CDN -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<!-- <script>
+  //crear usuarios
+  async function nuevoUsuario(){
+    
+    try {
+      var nombre = document.querySelector("input")
+
+      const response = await axios.post("http://localhost:5000/users/users/",{
+    "Nombre": nombre.value ,
+    "Apellido": "Melendres",
+    "Email": "Email_2_@gmail.com",
+    "Contraseña": 1234,
+    "Favoritos": true})
+      console.log(response)
+    } catch (error) {
+      console.log(error)
+    }
+  }
+  
+  // obtenerUsuarios
+  async function obtenerUsuarios(){
+    
+    try {
+      const response = await axios.get("http://localhost:5000/users/users/")
+      console.log(response)
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  document.querySelector(".enviar").addEventListener("click", nuevoUsuario)
+
+  obtenerUsuarios()
+
+</script> -->
+
+<script src="./index.js"></script>
+
+</body>
+</html>

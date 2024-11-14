@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edad para comprar tickets</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        button.disabled {
+            background-color: gray;
+            color: white;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Compra de tickets</h1>
+    <label for="age">Ingresa tu edad:</label>
+    <input type="number" id="age" placeholder="Edad">
+    <button onclick="validarEdad()">Validar</button>
+
+    <br><br>
+
+    <button id="buyTicket1">Comprar Ticket 1</button>
+    <button id="buyTicket2">Comprar Ticket 2</button>
+
+    <script>
+        function validarEdad() {
+            const edad = document.getElementById('age').value;
+
+            if (edad < 21) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'No puedes comprar tickets porque eres menor de 21 años.'
+                });
+
+                // Deshabilitar los botones
+                deshabilitarBotones();
+            } else {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Edad válida',
+                    text: 'Puedes comprar tickets.'
+                });
+            }
+        }
+
+        function deshabilitarBotones() {
+            const botones = document.querySelectorAll('button');
+
+            botones.forEach(boton => {
+                if (boton.id !== '') {
+                    boton.disabled = true;
+                    boton.classList.add('disabled');
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0896b6527f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="bg-gradient-to-r from-blue-700 to-[#B06AB3]">
+
+    <div class="bg-gradient-to-r from-blue-700 to-[#B06AB3] font-sans px-6 py-12">
+        <div class="container mx-auto flex flex-col justify-center items-center text-center">
+          <h2 class="text-white sm:text-4xl text-3xl font-bold mb-4">Tours y Fechas</h2>
+          <p class="text-white text-base text-center mb-8" id="welcome">Hola, ya adquiriste tu tickets?</p><span class="ml-10 pt-1 pb-1 text-red-800 text-xl cursor-pointer hover:text-white"><i></i></span>
+  
+          <button type="button" class="bg-white text-sm text-blue-600 font-semibold py-3 px-6 rounded-lg hover:bg-slate-100">
+            <a href="index.html">Get Started</a>
+          </button>
+          <button class="bg-gray-300 px-4 py-2 rounded-md cursor-not-allowed opacity-50" disabled>
+            Disabled Button
+          </button>
+        </div>
+      </div>
+
+
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <table class="w-full text-sm text-left rtl:text-right text-blue-100 dark:text-blue-100">
+        <thead class="text-xs text-white uppercase bg-blue-600 border-b border-blue-400 dark:text-white">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    Fecha
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Lugar
+                </th>
+                <!-- <th scope="col" class="px-6 py-3">
+                    Category
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Price
+                </th> -->
+                <th scope="col" class="px-6 py-3">
+                    Entradas
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-blue-600 border-b border-blue-400 hover:bg-blue-500">
+                <th scope="row" class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100">
+                    OCTOBER 30 2024
+                </th>
+                <td class="px-6 py-4">
+                    Marvel Stadium, Melbourne, Australia
+                </td>
+                <!-- <td class="px-6 py-4">
+                    Laptop
+                </td>
+                <td class="px-6 py-4">
+                    $2999
+                </td> -->
+                <td class="px-6 py-4">
+                    <a href="#" class="font-medium text-white hover:underline"><button id="$" type="button" onclick="mifuncion('Marvel Stadium, Melbourne, Australia')"
+                        class="px-5 py-2.5 rounded-lg text-white text-sm tracking-wider font-medium border border-current outline-none bg-gradient-to-tr hover:bg-gradient-to-tl from-purple-700 to-purple-300">Get Tickets</button></a>
+                </td>
+            </tr>
+            <tr class="bg-blue-600 border-b border-blue-400 hover:bg-blue-500">
+                <th scope="row" class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100">
+                    NOVEMBER 6 2024
+                </th>
+                <td class="px-6 py-4">
+                    Accor Stadium, Sydney, Australia
+                </td>
+                <!-- <td class="px-6 py-4">
+                    Laptop PC
+                </td>
+                <td class="px-6 py-4">
+                    $1999
+                </td> -->
+                <td class="px-6 py-4">
+                    <a href="#" class="font-medium text-white hover:underline"><button id="$" type="button" onclick="mifuncion('Accor Stadium, Sydney, Australia')"
+                        class="px-5 py-2.5 rounded-lg text-white text-sm tracking-wider font-medium border border-current outline-none bg-gradient-to-tr hover:bg-gradient-to-tl from-purple-700 to-purple-300">Get Tickets</button></a>
+                </td>
+            </tr>
+            <tr class="bg-blue-600 border-b border-blue-400 hover:bg-blue-500">
+                <th scope="row" class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100">
+                    NOVEMBER 13 2024
+                </th>
+                <td class="px-6 py-4">
+                    Eden park, Auckland, Australia
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="font-medium text-white hover:underline"><button id="$" type="button" onclick="mifuncion('Eden park, Auckland, Australia')"
+                        class="px-5 py-2.5 rounded-lg text-white text-sm tracking-wider font-medium border border-current outline-none bg-gradient-to-tr hover:bg-gradient-to-tl from-purple-700 to-purple-300">Get Tickets</button></a>
+                </td>
+            </tr>
+            <tr class="bg-blue-600 border-b border-blue-400 hover:bg-blue-500">
+                <th scope="row" class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100">
+                    NOVEMBER 14 2024
+                </th>
+                <td class="px-6 py-4">
+                    Estadio River, Buenos Aires, Argentina
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="font-medium text-white hover:underline"><button id="$" type="button" onclick="mifuncion('Estadio River, Buenos Aires, Argentina')"
+                        class="px-5 py-2.5 rounded-lg text-white text-sm tracking-wider font-medium border border-current outline-none bg-gradient-to-tr hover:bg-gradient-to-tl from-purple-700 to-purple-300">Get Tickets</button></a>
+                </td>
+            </tr>
+            <tr class="bg-blue-600 border-blue-400 hover:bg-blue-500">
+                <th scope="row" class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100">
+                    DECEMBER 14 2024
+                </th>
+                <td class="px-6 py-4">
+                    Estadio Kempes, Córdoba capital, Argentina
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="font-medium text-white hover:underline"><button id="$" type="button" onclick="mifuncion('Estadio Kempes, Córdoba capital, Argentina')"
+        class="px-5 py-2.5 rounded-lg text-white text-sm tracking-wider font-medium border border-current outline-none bg-gradient-to-tr hover:bg-gradient-to-tl from-purple-700 to-purple-300">Get Tickets</button></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script> -->
+<script src="tours.js"></script>
+
+</body>
+
+</html>

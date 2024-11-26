@@ -25,4 +25,4 @@ Paso a paso de cómo descargar el repositorio y levantarlo. Ejemplo:
 ##  🖊️  Autores y contactos
 
 ## 🎁 Agradecimientos 
-Agrdezco a Universidad de Vicente Lopez y a Plataforma 5
+Agradezco a Universidad de Vicente Lopez y a Plataforma 5

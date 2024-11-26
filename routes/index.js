@@ -10,24 +10,24 @@ router.use('/discos', discos)
 router.use('/users', users)
 
 //------------------------------------------
-router.get('/',(req, res)=>{
-    res.status(200).send('Hello World!')
-})
+// router.get('/',(req, res)=>{
+//     res.status(200).send('Hello World!')
+// })
 
-router.get('/chau',(req, res)=>{
-    res.status(200).send('chau chau')
-})
+// router.get('/chau',(req, res)=>{
+//     res.status(200).send('chau chau')
+// })
 
-router.get('/prueba',(req, res)=>{
-    res.status(200).send({nombre: 'Juan', apellido: 'Perez'})
-})
+// router.get('/prueba',(req, res)=>{
+//     res.status(200).send({nombre: 'Juan', apellido: 'Perez'})
+// })
 
-router.get('/models/Users',(req, res)=>{
-    res.status(200).send({nombre: 'Juan', apellido: 'Perez'})
-})
+// router.get('/models/Users',(req, res)=>{
+//     res.status(200).send({nombre: 'Juan', apellido: 'Perez'})
+// })
 
-router.get('/nuevoUsuario',(req, res)=>{
-    res.status(200).send('nuevoUsuario')
-})
+// router.get('/nuevoUsuario',(req, res)=>{
+//     res.status(200).send('nuevoUsuario')
+// })
 
 module.exports = router

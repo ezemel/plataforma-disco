@@ -45,7 +45,7 @@ router.get('/users', async(req, res) => {
 });
 
 
-// GET  ---> TRAER UN SOLO usuario
+//GET  ---> TRAER UN SOLO usuario
 router.get('/users/:Nombre', async(req, res) => {
   // Lógica para obtener todos los usuarios
   console.log('PARAMS', req.params)
@@ -61,6 +61,19 @@ router.get('/users/:Nombre', async(req, res) => {
     res.status(500).send('Algo anda mal')
   }
 })
+
+// Ruta para consultar un usuario por ID
+// router.get("/users/:id", async (req, res) => {
+//   try {
+//     const users = await Users.findById({id:req.params.id});
+//     if (!users) {
+//       return res.status(404).send("Usuario no encontrado.");
+//     }
+//     res.status(200).send(users);
+//   } catch (error) {
+//     res.status(500).send(error);
+//   }
+// });
 
 // BORRAR USUARIO
 router.delete('/users/:Nombre', async(req,res)=>{

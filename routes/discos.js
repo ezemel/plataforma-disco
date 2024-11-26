@@ -27,25 +27,60 @@ router.get('/discos/', async (req, res) => {
     }
   })
 
-//GET x NOMBRE
-
-router.get('/discos/:TítuloAlbum', async (req, res) => {
-    //la-noche-estrellada
-    //console.log('PARAMS', req.params) 
-    try {
-      const result = await Discos.find({TítuloAlbum:req.params.TítuloAlbum})
-      res.status(200).send(result)
-      // if (result.length) {
-      //   res.status(200).send(result)
-      // } else {
-      //   res.status(404).send('No existe usuario')
-      // }
-      //res.status(200).send(result)
-    } catch (error) {
-      res.status(500).send("No data")
-    }
-  })
+//GET  ---> TRAER UN SOLO disco
+// router.get("/título/:TítuloAlbum", async(req, res) => {
+//     //la-noche-estrellada
+//     console.log('PARAMS', req.params) 
+//     try {
+//       const disco = await Discos.find({ TítuloAlbum: req.params.TítuloAlbum })
   
+//       if (disco.length) {
+//         res.status(200).send(disco)
+//       } else {
+//         res.status(404).send('No existe disco')
+//       }
+//       //res.status(200).send(discos)
+//     } catch (error) {
+//       res.status(500).send('Algo anda mal')
+//     }
+//   })
+
+  // router.get("/discos/:TítuloAlbum", async (req, res) => {
+  //   //la-noche-estrellada
+  //   console.log('PARAMS', req.params)
+  //   try {
+  //     const result = await Discos.find(req.params.TítuloAlbum)
+  //     res.status(200).send(result)
+  //   } catch (error) {
+  //     res.status(404).send("No data")
+  //   }
+  // })
+  
+  // Ruta para consultar un álbum por ID
+    router.get("/discos/:TituloAlbum", async (req, res) => {
+      console.log('PARAMS', req.params)
+      
+      try {
+        //const discos = await Discos.findById(req.params.id);
+        const discos = await Discos.find(req.params);
+        //const disco = await Discos.findOne({ TituloAlbum: tituloAlbum });
+        // if (!discos) {
+        //   return res.status(404).send("Álbum no encontrado.");
+        // }
+        res.status(200).send(discos);
+        //res.status(200).send({Portada: disco.Portada});
+        console.log('Portada', res.params.Portada)
+      } catch (error) {
+        res.status(500).send(error);
+      }
+
+      //console.log('PARAMS', res.Portada)
+
+    });
+
+
+
+
   //UPDATE
   
   router.put('/discos/:id', async (req, res)=>{

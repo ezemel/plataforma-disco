@@ -23,7 +23,7 @@ async function createAlbum(){
         var varAnioVenta = document.querySelector(".anioVenta")
         var varPortada = document.querySelector(".portada")
 
-        const response = await axios.post('http://localhost:5000/discos/discos', {
+        const response = await axios.post('https://plataforma-disco-jjjh.onrender.com/discos/discos', {
             TituloAlbum: varTituloAlbum.value,
             Descripcion: varDescripcion.value,
             AnioVenta: varAnioVenta.value,

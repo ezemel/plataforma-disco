@@ -1,6 +1,6 @@
 const getAlbums = async () => {
   try {
-    const response = await axios.get('http://localhost:5000/discos/discos/');
+    const response = await axios.get('https://plataforma-disco-jjjh.onrender.com');
     const albums = response.data;
 
     if (!albums || albums.length === 0) {

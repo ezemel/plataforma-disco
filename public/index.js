@@ -10,8 +10,8 @@ const getAlbums = async () => {
 
     albums.forEach(album => renderAlbums(album));
   } catch (error) {
-    //console.error("Error al cargar los álbumes:", error.message);
-    console.error("Error al cargar los álbumes:");
+    console.error("Error al cargar los álbumes:", error.message);
+    //console.error("Error al cargar los álbumes:");
   }
 };
 

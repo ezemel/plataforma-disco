@@ -30,6 +30,12 @@ async function createAlbum(){
             Portada: varPortada.value
         })
 
+        swal({
+            title: "Success!",
+            text: "Album added to the collection!",
+            icon: "success",
+            confirmButtonText: "Ok",
+          });
 
         console.log(response.data)
     } catch (error) {
